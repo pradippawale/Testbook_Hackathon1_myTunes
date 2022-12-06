@@ -1,0 +1,181 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.leftside{
+    width: 60%;
+}
+
+.rightside{
+    width: 40%;
+}
+
+section{
+    background-color: rgb(16, 28, 53);
+    padding: 20px;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.mainContent{
+    display: grid;
+    /* flex-direction: column; */
+
+}
+
+/* myTunes section css */
+
+
+.myTunes{
+    position: absolute;
+    text-align: center;
+    color: #ca8146;
+    font-weight: bolder ;
+    font-size: xx-large;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.myTune{
+    text-indent: 80px;
+}
+
+.myTunes img{
+    width: 100%;
+    height: 100%;
+}
+
+.myTunes .myTunesNote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myTunes .myTunesNote p{
+    font-size: 1.5rem ;
+    padding: 0 0.1px ;
+
+}
+
+/* music section css */
+
+main .music {
+    position: absolute;
+    width: 100%;
+    height: 100vh ;
+    background-color: grey;
+    top: 100%;
+    text-align: center;
+    padding-top: 30px;
+    color: white
+}
+
+.music-icon{
+    color:rgb(134, 153, 170);
+}
+main .music-head{
+    font-size: 2.6rem;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+main .music-head i{
+    font-weight: bolder ;
+}
+
+main .music h3{
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.para{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 10px 50px;
+}
+
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.music .btn{
+    color:white;
+}
+
+
+
+/* video section css */
+main .video{
+    position: absolute;
+    width: 100%;
+    height: 157vh;
+    top: 200%;
+    background-color:rgb(218, 218, 218) ;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+
+.video .videonotes
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    padding: 20px;
+}
+
+/* giftcards section start */
+
+
+.container{
+    position: absolute;
+    top: 430%;
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    text-align: center;
+}
+
+.gift-card{
+    padding-left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.gift-card-link{
+    text-decoration:none;
+    color: black
+}
+
+/* footer section start */
+.nav-footer{
+    background-color: gray;
+    width: 100%;
+    height: 20vh;
+
+}

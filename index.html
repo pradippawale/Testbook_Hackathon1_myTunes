@@ -16,7 +16,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="javascript" href="myTunes.js">
     <link rel="stylesheet" href="stylesheets.css" />
     <title>myTunes</title>
   </head>
@@ -24,15 +24,15 @@
     <div class="main-section">
       <div class="nav-section">
         <nav>
-          <a href="#">myTunes</a>
-          <a href="#">Overview</a>
-          <a href="#">Music</a>
-          <a href="#">Video</a>
-          <a href="#">Gift Cards</a>
+          <a id="myTunes1" href="#">myTunes</a>
+          <a id="overview1" href="#">Overview</a>
+          <a id="music1" href="#">Music</a>
+          <a id="video1" href="#">Video</a>
+          <a i="giftcards1" href="#">Gift Cards</a>
         </nav>
       </div>
-      <div class="container">
-        <div class="myTunesNote">
+      <div class="myTunesNote">
+        <div class="container">
           <h1>myTunes</h1>
           <br />
           <h2>Your music, movies, and TV shows take center stage.</h2>
@@ -100,37 +100,40 @@
         <br /><br />
         <img src="./assets/video-image.png" alt="" /><br /><br /><br /><br />
         <div class="videonotes">
-          <h3 class="heading">
-            A world of entertainment. Available wherever you are.
-          </h3>
-          <br />
-          <p class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit <br> repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum <br> sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!
-          </p>
+          <div>
+            <h3 class="heading">
+              A world of entertainment. Available wherever you are.
+            </h3>
+            <br />
+            <p class="para">
+              Most people listen to music for entertainment. Whether they are driving in their car, working out at the gym, or just trying to relax at home, music is a ubiquitous part of our lives. There are many different types of music that can be used for entertainment, and each person’s preference is different. Some people prefer upbeat pop songs or rock ballads, while others prefer slower country or jazz tunes. No matter what type of music you prefer, listening to music can be a fun and relaxing way to di-stress or pass the time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="gift-cards">
       <div class="container">
         <div class="gift-card">
-          <img
-            src="./assets/cards-image.png"
-            alt=""
-            width="50%"
-            height="100vh"
-          />
+          <div class="card-img">
+            <img
+              src="./assets/cards-image.png"
+              alt=""
+              width="90%"
+              height="90%"
+            />
+          </div>
           <div>
             <h4>Gift Cards</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-              expedita tempore quasi omnis a aut et totam illo fuga accusamus
+              expedita tempore quasi omnis a aut et totam illo fuga accusamum
               dolorum vero, ut harum consectetur. Minima molestias officiis
-              culpa non sed dicta itaque. Et aliquam illo obcaecati molestias
-              veritatis porro.
+              culpa non sed dicta itaque. Et aliquam illo obcaecati
             </p>
             <p>Already have an Orange MyTunes Music Gift Card?</p>
             <hr />
-            <a class="gift-card-link"
+            <a src="#" class="gift-card-link"
               ><i class=""><img src="./assets/caret-right.svg" alt="" /></i
               >Reedm</a
             >
@@ -140,39 +143,46 @@
     </section>
     <footer>
       <nav class="nav-footer">
-        <h2>Shop & Learn</h2>
-        <div>
-          <a href="#">Music</a>
-          <a href="#">Movies</a>
-          <a href="#">Shows</a>
-          <a href="#">Apps</a>
-          <a href="#">Gift Cards</a>
-        </div>
-        <h2>Orange Store</h2>
-        <div>
-          <a href="#">Find a Store</a>
-          <a href="#">Today at Orange</a>
-          <a href="#">Orange Camp</a>
-          <a href="#">Financing</a>
-          <a href="#">Gift Cards</a>
-        </div>
-        <h2>Education & Business</h2>
-        <div>
-          <a href="#">Orange & Education</a>
-          <a href="#">Orange & Business</a>
-          <a href="#">Shop for college</a>
-          <a href="#">Shop & Business</a>
-          <a href="#">Jobs</a>
-        </div>
-        <h2>About Orange</h2>
-        <div>
-          <a href="#">Newsroom </a>
-          <a href="#">Orange Leadership</a>
-          <a href="#">Investors</a>
-          <a href="#">Events</a>
-          <a href="#">Contsct Orange</a>
-        </div>
+        <ul>
+          <h2>Shop & Learn</h2>
+          <hr />
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+
+        <ul>
+          <h2>Orange Store</h2>
+          <hr />
+          <li><a href="#">Find a Store</a></li>
+          <li><a href="#">Orange Camp</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+
+        <ul>
+          <h2>Education & Business</h2>
+          <hr />
+          <li><a href="#">Orange & Education</a></li>
+          <li><a href="#">Shop for college</a></li>
+          <li><a href="#">Shop & Business</a></li>
+          <li><a href="#">Jobs</a></li>
+        </ul>
+
+        <ul>
+          <h2>About Orange</h2>
+          <hr />
+          <li><a href="#">Orange Leadership</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contsct Orange</a></li>
+        </ul>
       </nav>
+      <div class="footer-note">
+        <p>Copyright © 2019 Orange myTunes</p>
+      </div>
     </footer>
+    
   </body>
 </html>

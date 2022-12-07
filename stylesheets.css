@@ -18,12 +18,17 @@ section{
     display: block;
 }
 
-.nav-section{
+.main-section >.nav-section{
+    position: relative;
     background-color: rgb(32, 30, 30);
     height: 4vh;
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.nav-section li :hover{
+    cursor: pointer;
 }
 
 nav{
@@ -40,7 +45,7 @@ nav a{
 }
 
 .container{
-    max-width: 1420px;
+    max-width: 1494px;
     text-align: center;
     margin: 0px;
     padding: 0 3rem;
@@ -67,11 +72,10 @@ nav a{
 
 }
 
-.nav-footer a{
-    color: black;
-}
+/* music-section start */
 
 .musicsection{
+    position: relative;
     width: 100%;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -81,23 +85,95 @@ nav a{
     line-height: 1.6;
 }
 
-.musicsection .image-2{
-    width: 70%;
-}
 
 .button{
     color: white;
 }
 
+/* video-section start */
+
 #video{
     padding-top: 50px;
+    position: relative;
 }
 
 .videonotes{
-    padding-top: 10px;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 235px;
     text-align: center;
-    background-color: rgb(224, 224, 202);
-    border: 1px black ;
+    background-color: rgb(179, 179, 129);
+    border: 1px rgb(167, 98, 98) ;
     border-radius: 5px;
-    height: 200px;
+}
+
+.videonotes > div{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    padding: 10px;
+}
+
+/* gift-cards-section start */
+
+#gift-cards{
+    position:relative;
+    margin: 10%;
+}
+.gift-card{
+    height: 30vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    justify-content: center;
+
+}
+
+.gift-card-link{
+    text-decoration: none;
+    color: black;
+}
+
+.gift-card-link :hover{
+    cursor: pointer;
+}
+
+
+
+/* footer-section start */
+
+.nav-footer{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    padding: 0 20px;
+}
+
+
+.nav-footer  li {
+    list-style: none;
+}
+
+
+.nav-footer  li a{
+    color: white;
+}
+
+.footer-note{
+    text-align: center;
+    padding:10px 0;
+    color: white;
+    background-color: rgb(32, 30, 30);
+    border: 1px solid white;
+}
+
+
+@media query {
+    body{
+        min-width: 1312px;
+        max-width: 1494px;
+    } 
 }
